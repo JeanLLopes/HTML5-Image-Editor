@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/bootstrap-theme.min.css" rel="stylesheet" />
+</head>
+    <body class="container">
+        <header>
+            <h4 class="text-uppercase text-center"><mark>Filtros de imagens com Javascritp e CSS3</mark></h4>
+        </header>
+        
+        <section>
+            <div class="row">
+                <div class="col-md-6">
+                    <input type="url" id="inputImgUrl" name="inputImgUrl" placeholder="Insira a URL de sua imagem" class="form-control input-sm" />
+                </div>
+                <div class="col-md-2">
+                    <button id="btnUrlImage" class="btn btn-primary btn-sm">PEGAR IMAGEM</button>
+                </div>
+                <div class="col-md-1">
+                    <button id="btnBaixarImagem" class="btn btn-primary btn-sm">DOWNLOAD</button>
+                </div>
+            </div>
+
+            <br/>
+            
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="form-group">
+                        <label class="text-danger text-uppercase small">Escala de Cinza</label>
+                        <input id="inputEscalaCinza" type="range" min="0" max="100" value="0" />
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="form-group">
+                        <label class="text-danger text-uppercase small">Blur</label>
+                        <input id="inputBlur" type="range" min="0" max="50" value="0" />
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="form-group">
+                        <label class="text-danger text-uppercase small">Brilho</label>
+                        <input type="range" id="inputBrilho" min="0" max="200" value="100" />
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="form-group">
+                        <label class="text-danger text-uppercase small">Contraste</label>
+                        <input type="range" id="inputContraste" min="0" max="200" value="100" />
+                    </div>
+                </div>
+            </div>
+            
+            <br/>
+            
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="form-group">
+                        <label class="text-danger text-uppercase small">Hue Rotate</label>
+                        <input id="inputHueRotate" type="range" min="0" max="360" value="0" />
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="form-group">
+                        <label class="text-danger text-uppercase small">Opacidade</label>
+                        <input id="inputOpacidade" type="range" min="0" max="100" value="100" />
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="form-group">
+                        <label class="text-danger text-uppercase small">Invert</label>
+                        <input type="range" id="inputInvert" min="0" max="100" value="0" />
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="form-group">
+                        <label class="text-danger text-uppercase small">Saturação</label>
+                        <input type="range" id="inputSaturacao" min="0" max="500" value="100" />
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div id="divImage" class="col-md-6">
+                    <a href="Icon.png" donwload="Icon.png">
+                        <img id="imagemResultado" src="Icon.png"
+                             height="300" alt="Editor de Imagens" title="Editor de Imagens" />
+                    </a>
+                </div>
+            </div>
+            
+            <br/>
+
+            <div class="row">
+                <div id="divCanvas" class="col-md-8" style="display:none">
+                    <canvas id="canvas"></canvas>
+                    <br/>
+                    <mark class="text-lowercase">Para salvar a imagem clique com o botão direito e em "Salvar imagem como"</mark>
+                </div>
+            </div>
+
+        </section>
+
+
+        <script src="Scripts/jquery-1.9.1.min.js"></script>
+        <script src="Scripts/bootstrap.min.js"></script>
+        <script src="Scripts/script-editor.js"></script>
+        <script src="Scripts/rasterizeHTML.allinone.js"></script>
+    </body>
+</html>
