@@ -3,4 +3,4 @@
 <p>More info:</p>
 <a href='http://www.meetup.com/pt/NetCoders/events/223738470/'>MeetUp NetCoders</a>
 
-:fada For test this application look https://jeanllopes.github.io/HTML5-Image-Editor/
+For test this application look https://jeanllopes.github.io/HTML5-Image-Editor/
